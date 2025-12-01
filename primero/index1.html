@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SINTAXIS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>ESCRIBE EL CÓDIGO:</h2>
+
+  <div class="progress-wrapper">
+    <div id="progressBar"></div>
+  </div>
+
+  <div class="text-wrapper">
+    <pre id="givenText" class="typing-text background-text"></pre>
+    <pre id="typedText" class="typing-text overlay"></pre>
+  </div>
+
+  <div class="navigation-buttons">
+    <button id="prevBtn">ANTERIOR</button>
+    <button id="nextBtn">SIGUIENTE</button>
+  </div>
+</div>
+
+<!-- Sound for completion -->
+<audio id="alertSound" src="../success.ogg"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

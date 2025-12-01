@@ -1,0 +1,20 @@
+#Programa que dibuja la figura que el usuario elige
+import turtle
+t = turtle.Turtle()
+
+figura = input('¿Qué figura quieres dibujar?, ¿cuadrado o triángulo?')
+if figura == 'cuadrado':
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+if figura == 'triangulo':
+    t.forward(100)
+    t.left(120)
+    t.forward(100)
+    t.left(120)
+    t.forward(100)

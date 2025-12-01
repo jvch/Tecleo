@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p>My name is Sofia</p>
+
+        <p>My favorite color is blue!</p>
+
+        <p>My favorite animal is an Axolotl</p>
+    </body>
+
+</html>

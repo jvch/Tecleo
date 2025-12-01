@@ -1,0 +1,6 @@
+import turtle
+t = turtle.Turtle()
+t.penup()
+t.dot(30)
+t.forward(50)
+t.dot(30)
