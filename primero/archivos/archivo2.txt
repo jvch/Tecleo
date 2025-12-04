@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-    </head>
-
-    <body>
-        <h2>Breakfast Foods</h2>
-        <ul>
-            <li>Cereal</li>
-            <li>Eggs</li>
-            <li>Waffles</li>
-        </ul>
-        <h2>Meals</h2>
-        <ol>
-            <li>Cereal</li>
-            <li>Eggs</li>
-            <li>Waffles</li>
-        </ol>
-    </body>
-
-</html>
+    <!-- una clase (blinky) en dos etiquetas de html -->
+    <img class="blinky" src="blinky.png">
+    <h2 class="blinky">Blinky</h2>
