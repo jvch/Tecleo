@@ -1,6 +1,6 @@
+/*Usando un ciclo para dibujar un cuadraro*/
 import turtle
 t = turtle.Turtle()
-t.penup()
-t.dot(30)
-t.forward(50)
-t.dot(30)
+for n in range(4):
+  t.forward(100)
+  t.right(90)
