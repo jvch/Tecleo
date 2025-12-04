@@ -1,97 +1,120 @@
-/* ================================
-   Body / Page Setup
-   ================================ */
+/* =======================================================
+   1. ROOT VARIABLES (THEME)
+   ======================================================= */
+:root {
+    /* Colors (Fallout Terminal Green) */
+    --color-main-bg: #0c0c0c;
+    --color-container-bg: #111111;
+    --color-terminal-green: #00ff00;
+    --color-dark-green: #003300;
+    --color-error: #ff00d0;
+    --color-dim-text: #ffffff41; /* Dim green/white for background text */
+    --color-popup-bg: #222200; /* Dark yellow/brown for popup */
+    --color-popup-text-bg: #222200; /* Dark color for popup button text */
+    --color-button-hover: #22ff22;
+
+    /* Fonts and Shadows */
+    --font-terminal: "Courier New", monospace;
+    --shadow-main: 4px 4px 0 var(--color-dark-green);
+    --shadow-popup: 0 0 20px var(--color-terminal-green);
+
+    /* Dimensions */
+    --padding-base: 10px;
+}
+
+/* =======================================================
+   2. GLOBAL / BODY SETUP
+   ======================================================= */
 body {
     font-weight: bolder;
     margin: 0;
-    background-color: #0c0c0c; /* dark Fallout terminal style */
-    font-family: "Courier New", monospace;
+    background-color: var(--color-main-bg);
+    font-family: var(--font-terminal);
+    color: var(--color-terminal-green);
+    
+    /* Centering */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #00ff00; /* bright green terminal text */
 }
 
-/* ================================
-   90s-style Container
-   ================================ */
+/* Base button and header styles */
+button {
+    font-family: var(--font-terminal);
+    font-weight: bolder;
+    cursor: pointer;
+    border: 2px solid var(--color-terminal-green);
+    transition: background-color 0.3s;
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-terminal-green);
+    font-size: 2em;
+    text-shadow: 2px 2px var(--color-dark-green);
+}
+
+/* =======================================================
+   3. LAYOUT / CONTAINER
+   ======================================================= */
 .container {
     width: 90%;
     max-width: 1200px;
     padding: 20px;
     text-align: left;
-    background-color: #111111; /* dark background */
-    border: 4px solid #00ff00;
-    box-shadow: 4px 4px 0 #003300; /* darker green shadow */
+    background-color: var(--color-container-bg);
+    border: 4px solid var(--color-terminal-green);
+    box-shadow: var(--shadow-main);
+    
+    /* Z-Index for Modal stacking */
+    position: relative; 
+    z-index: 1; 
 }
 
-/* ================================
-   Typing Area
-   ================================ */
+/* =======================================================
+   4. TYPING AREA
+   ======================================================= */
 .text-wrapper {
     position: relative;
+    z-index: 2; 
     width: 100%;
     height: 70vh;
-    border: 2px solid #00ff00;
-    background-color: #0c0c0c;
+    border: 2px solid var(--color-terminal-green);
+    background-color: var(--color-main-bg);
     padding: 30px;
-    overflow: hidden; /* hide scrollbars */
-    font-size: 40px; /* starting value; JS adjusts dynamically */
+    overflow: hidden;
+    font-size: 40px;
     line-height: 1.2;
     box-sizing: border-box;
 }
 
-/* ================================
-   Typing Text (Foreground)
-   ================================ */
-.typing-text {
-    font-family: "Courier New", monospace;
+/* Common styles for text layers (given, typed, hidden input) */
+.typing-text, .background-text, .overlay {
+    font-family: var(--font-terminal);
+    font-size: inherit;
+    margin: 0;
     white-space: pre;
-    margin: 0;
-    color: #00ff00;
-    font-size: inherit;
+    position: absolute;
+    top: var(--padding-base);
+    left: var(--padding-base);
+    width: 100%;
+    height: 100%;
 }
 
-/* ================================
-   Background Text
-   ================================ */
 .background-text {
-    color: #ffffff41; /* dim green for background text */
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-size: inherit;
+    color: var(--color-dim-text); 
 }
 
-/* ================================
-   Overlay Text
-   ================================ */
 .overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    color: #00ff00;
-    font-size: inherit;
+    color: var(--color-terminal-green);
 }
 
-/* ================================
-   Wrong Letters
-   ================================ */
 .wrong {
-    color: #ff00d0; /* bright red for mistakes */
+    color: var(--color-error); 
     font-weight: bolder;
 }
 
-/* ================================
-   Hidden Textarea for Input
-   ================================ */
 .hidden-input {
     opacity: 0;
     position: absolute;
@@ -101,13 +124,10 @@ body {
     resize: none;
 }
 
-/* ================================
-   Blinking Caret (Classic)
-   ================================ */
 .caret {
     display: inline-block;
     width: 1ch;
-    background-color: #00ff00;
+    background-color: var(--color-terminal-green);
     animation: blink 1s step-start infinite;
 }
 
@@ -115,23 +135,19 @@ body {
     50% { background-color: transparent; }
 }
 
-/* ================================
-   Navigation Buttons
-   ================================ */
+/* =======================================================
+   5. NAVIGATION / PROGRESS
+   ======================================================= */
 .navigation-buttons {
-    margin-top: 10px;
+    margin-top: var(--padding-base);
     display: flex;
     justify-content: space-between;
 }
 
 .navigation-buttons button {
-    background-color: #003300;
-    color: #00ff00;
-    border: 2px solid #00ff00;
-    padding: 15px 25px; /* bigger buttons */
-    font-weight: bolder;
-    cursor: pointer;
-    font-family: "Courier New", monospace;
+    background-color: var(--color-dark-green);
+    color: var(--color-terminal-green);
+    padding: 15px 25px; 
     font-size: 1.2em;
 }
 
@@ -139,81 +155,76 @@ body {
     background-color: #005500;
 }
 
-/* ================================
-   Progress Bar
-   ================================ */
 .progress-wrapper {
     width: 100%;
     height: 25px;
-    background-color: #111111;
-    margin-bottom: 10px;
-    border: 2px solid #00ff00;
+    background-color: var(--color-container-bg);
+    margin-bottom: var(--padding-base);
+    border: 2px solid var(--color-terminal-green);
 }
 
 #progressBar {
     width: 0%;
     height: 100%;
-    background-color: #00ff00;
+    background-color: var(--color-terminal-green);
 }
 
-/* ================================
-   Header
-   ================================ */
-h2 {
-    text-align: center;
-    font-size: 2em; /* larger Fallout 1 style header */
-    color: #00ff00;
-    text-shadow: 2px 2px #003300;
-}
-
-/* ============================
-   Completion Popup Overlay
-   ============================ */
-#completionPopup {
+/* =======================================================
+   6. POPUP / MODAL STYLES
+   ======================================================= */
+#completionPopup, #fileCompletionPopup {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* dark semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 999999; 
 }
 
-#completionPopup .popup-content {
-    background-color: #222200; /* Fallout-style dark yellow/brown */
-    border: 4px solid #00ff00; /* green glowing border */
+.popup-content {
+    background-color: var(--color-popup-bg);
+    border: 4px solid var(--color-terminal-green);
     padding: 40px;
     text-align: center;
-    color: #00ff00; /* bright Fallout green text */
-    font-family: "Courier New", monospace;
-    box-shadow: 0 0 20px #00ff00;
+    color: var(--color-terminal-green);
+    font-family: var(--font-terminal);
+    box-shadow: var(--shadow-popup);
     max-width: 90%;
 }
 
-#completionPopup .popup-content h2 {
-    font-size: 3em;
+.popup-content h1, .popup-content h2, .popup-content h3 {
+    /* Combined styles for all headers inside popup content */
     margin-bottom: 20px;
+    color: var(--color-terminal-green); /* Ensure headers are green */
 }
 
-#completionPopup .popup-content p {
+/* Specific size override for final popup header */
+#completionPopup .popup-content h2 {
+    font-size: 3em;
+}
+
+/* Specific size override for file popup header (if used) */
+#fileCompletionPopup .popup-content h3 {
+    font-size: 3em;
+}
+
+.popup-content p {
     font-size: 1.5em;
     margin-bottom: 30px;
 }
 
-#completionPopup .popup-content button {
-    background-color: #00ff00;
-    color: #222200;
-    border: 2px solid #00ff00;
+.popup-content button {
+    background-color: var(--color-terminal-green);
+    color: var(--color-popup-text-bg);
     font-weight: bold;
     padding: 10px 30px;
-    cursor: pointer;
-    font-family: "Courier New", monospace;
     font-size: 1.2em;
 }
 
-#completionPopup .popup-content button:hover {
-    background-color: #22ff22;
+.popup-content button:hover {
+    background-color: var(--color-button-hover);
 }
