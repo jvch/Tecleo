@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SINTAXIS</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINTAXIS</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
-<div class="container">
-  <h2>ESCRIBE EL CÓDIGO:</h2>
+    <main class="container" role="main">
+        
+        <header role="banner">
+            <h2>ESCRIBE EL CÓDIGO:</h2>
+        </header>
 
-  <div class="progress-wrapper">
-    <div id="progressBar"></div>
-  </div>
+        <div class="progress-wrapper" aria-label="Progreso del ejercicio">
+            <div id="progressBar"></div>
+        </div>
 
-  <div class="text-wrapper">
-    <pre id="givenText" class="typing-text background-text"></pre>
-    <pre id="typedText" class="typing-text overlay"></pre>
-  </div>
+        <section class="text-wrapper" aria-live="polite" aria-atomic="true" tabindex="0">
+            <pre id="givenText" class="typing-text background-text" aria-hidden="true"></pre>
+            <pre id="typedText" class="typing-text overlay"></pre>
+        </section>
 
-  <div class="navigation-buttons">
-    <button id="prevBtn">ANTERIOR</button>
-    <button id="nextBtn">SIGUIENTE</button>
-  </div>
-</div>
+        <nav class="navigation-buttons" aria-label="Navegación entre programas de código">
+            <button id="prevBtn" aria-label="Programa anterior">ANTERIOR</button>
+            <button id="nextBtn" aria-label="Siguiente programa">SIGUIENTE</button>
+        </nav>
+        
+    </main>
 
-<!-- Sound for completion -->
-<audio id="alertSound" src="../success.ogg"></audio>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
