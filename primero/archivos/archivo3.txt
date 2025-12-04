@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="animals.css">
-    </head>
-    <body>
-        <h1> Dogs vs Cats </h1>
-
-        <h3>Dogs</h3>
-        <img src="dog.jpg" alt="dog jumping">
-
-        <h3>Cats</h3>
-        <img src="cat.jpeg" alt="cat looking">
-
-    </body>
-</html>
+/*un comentario en el archivo de css*/
+.blinky{
+    border: solid 3px;
+    border-color: red;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive;
+    background-color: black;
+}
