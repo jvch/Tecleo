@@ -1,5 +1,3 @@
-import turtle
-t = turtle.Turtle()
-for n in range(4):
-  t.forward(100)
-  t.right(90)
+#Imprimiendo "hola mundo" 10 veces en la consola
+for i in range(10):
+	print("hola mundo")
