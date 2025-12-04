@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-    </head>
-
-    <body>
-        <h1>Biggest</h1>
-        <h2>Big</h2>
-        <h3>Medium Big</h3>
-        <h4>Medium Small</h4>
-        <h5>Small</h5>
-        <h6>Smallest</h6>
-    </body>
-
-</html>
+/*un comentario en el archivo de css*/
+body {
+    background: lightblue;
+    font-family: fantasy;
+}
