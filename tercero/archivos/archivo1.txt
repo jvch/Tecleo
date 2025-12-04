@@ -1,3 +1,5 @@
 import turtle
 t = turtle.Turtle()
-t.dot(40)
+for n in range(4):
+  t.forward(100)
+  t.right(90)
