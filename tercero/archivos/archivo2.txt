@@ -2,5 +2,5 @@
 import turtle
 t = turtle.Turtle()
 for i in range(3):
-	t.forward(60)
-	t.right(360/3)
+    t.forward(60)
+    t.right(360/3)
