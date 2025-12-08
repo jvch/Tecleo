@@ -1,6 +1,6 @@
-#Usando un ciclo para dibujar un cuadrado
+#Programa que dibuja un triángulo
 import turtle
 t = turtle.Turtle()
-for n in range(4):
-    t.forward(100)
-    t.right(90)
+for i in range(3):
+	t.forward(60)
+	t.right(360/3)

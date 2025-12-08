@@ -1,11 +1,6 @@
-#Dibujo de un tiro al blanco
+#Programa que dibuja un octágono
 import turtle
 t = turtle.Turtle()
-t.color('black')
-t.dot(200)
-t.color('cyan')
-t.dot(150)
-t.color('red')
-t.dot(100)
-t.color('yellow')
-t.dot(50)
+for n in range(8):
+	t.forward(50)
+	t.right(360/8)
