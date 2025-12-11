@@ -1,3 +1,5 @@
-#Imprimiendo los números del 0 al 9
-for n in range(10):
-    print(n)
+#Programa que dibuja un punto café de radio 120
+import turtle
+t = turtle.Turtle()
+t.color('brown')
+t.dot(120)

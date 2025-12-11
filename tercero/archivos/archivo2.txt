@@ -1,6 +1,16 @@
-#Programa que dibuja un triángulo
+#Programa que dibuja la silueta de un oso con ojos
 import turtle
 t = turtle.Turtle()
-for i in range(3):
-    t.forward(60)
-    t.right(360/3)
+t.color('brown')
+t.dot(120)
+t.goto(0,90)
+t.dot(80)
+t.goto(30,120)
+t.dot(40)
+t.goto(-30,120)
+t.dot(40)
+t.color('yellow')
+t.goto(15,100)
+t.dot(16)
+t.goto(-15,100)
+t.dot(16)
