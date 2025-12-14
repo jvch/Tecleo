@@ -1,6 +1,7 @@
-#Programa que dibuja un octágono
+#una línea hacia arriba
 import turtle
 t = turtle.Turtle()
-for n in range(8):
-    t.forward(50)
-    t.right(360/8)
+t.left(90)
+t.color('grey')
+t.width(10)
+t.forward(100)

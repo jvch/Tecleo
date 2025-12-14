@@ -1,5 +1,4 @@
-#Programa que dibuja un punto café de radio 120
+#coloreando el fondo de azul
 import turtle
-t = turtle.Turtle()
-t.color('brown')
-t.dot(120)
+s = turtle.Screen()
+s.bgcolor('blue')

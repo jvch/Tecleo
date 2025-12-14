@@ -1,16 +1,5 @@
-#Programa que dibuja la silueta de un oso con ojos
+#una línea de 20 pixeles de ancho
 import turtle
 t = turtle.Turtle()
-t.color('brown')
-t.dot(120)
-t.goto(0,90)
-t.dot(80)
-t.goto(30,120)
-t.dot(40)
-t.goto(-30,120)
-t.dot(40)
-t.color('yellow')
-t.goto(15,100)
-t.dot(16)
-t.goto(-15,100)
-t.dot(16)
+t.width(20)
+t.forward(100)
