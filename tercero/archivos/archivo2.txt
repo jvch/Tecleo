@@ -1,5 +1,6 @@
-#una línea de 20 pixeles de ancho
+#cuadrado de 50 píxeles de lado
 import turtle
-t = turtle.Turtle()
-t.width(20)
-t.forward(100)
+t=turtle.Turtle()
+for n in range(4):
+    t.forward(50)
+    t.right(90)

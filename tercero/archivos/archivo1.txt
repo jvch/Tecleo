@@ -1,4 +1,8 @@
-#coloreando el fondo de azul
+#tres puntos separados
 import turtle
-s = turtle.Screen()
-s.bgcolor('blue')
+t=turtle.Turtle()
+t.dot(15)
+t.forward(50)
+t.dot(15)
+t.forward(50)
+t.dot(15)
