@@ -1,3 +1,4 @@
+#script para hacer una cara
 import turtle
 t = turtle.Turtle()
 t.penup()
