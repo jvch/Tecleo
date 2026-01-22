@@ -1,6 +1,15 @@
-#cuadrado de 50 píxeles de lado
+#script para hacer un gusano
 import turtle
-t=turtle.Turtle()
-for n in range(4):
-    t.forward(50)
-    t.right(90)
+t = turtle.Turtle()
+t.penup()
+t.color('green')
+t.penup()
+for s in range(4):
+    t.dot(50)
+    t.forward(40)
+t.color('red')
+t.dot(70)
+t.color('yellow')
+t.dot(10)
+t.forward(20)
+t.dot(10)
