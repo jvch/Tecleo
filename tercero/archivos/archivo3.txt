@@ -1,6 +1,12 @@
-#script para hacer un octágono
-import turtle
-t = turtle.Turtle()
-for n in range(8):
-    t.forward(50)
-    t.right(360/8)
+#Resultado de tirar un par de dados 100 veces y su suma
+#Mostrando al final el número de veces que salió 7
+import random
+count = 0
+for n in range(100):
+    dice1 = random.randint(1,6)
+    dice2 = random.randint(1,6)
+    total = dice1 + dice2
+    print(dice1, dice2, total)
+    if total == 7:
+        count = count + 1
+print('Count =', count)

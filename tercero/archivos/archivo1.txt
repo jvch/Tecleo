@@ -1,16 +1,6 @@
-#script para hacer una cara
-import turtle
-t = turtle.Turtle()
-t.penup()
-t.color('yellow')
-t.dot(280)
-t.color('white')
-t.goto(50,10)
-t.dot(120)
-t.goto(-50,10)
-t.dot(120)
-t.color('black')
-t.goto(50,10)
-t.dot(40)
-t.goto(-50,10)
-t.dot(40)
+#Resultado de tirar dos dados y su suma
+import random
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+total = dice1 + dice2
+print(dice1, dice2, total)

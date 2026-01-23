@@ -1,15 +1,7 @@
-#script para hacer un gusano
-import turtle
-t = turtle.Turtle()
-t.penup()
-t.color('green')
-t.penup()
-for s in range(4):
-    t.dot(50)
-    t.forward(40)
-t.color('red')
-t.dot(70)
-t.color('yellow')
-t.dot(10)
-t.forward(20)
-t.dot(10)
+#Resultado de tirar un par de dados 100 veces y su suma
+import random
+for n in range(100):
+    dice1 = random.randint(1,6)
+    dice2 = random.randint(1,6)
+    total = dice1 + dice2
+    print(dice1, dice2, total)
