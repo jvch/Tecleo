@@ -1,6 +1,5 @@
-#Resultado de tirar dos dados y su suma
+#7 temperaturas diferentes entre 40 y 110 grados
 import random
-dice1 = random.randint(1,6)
-dice2 = random.randint(1,6)
-total = dice1 + dice2
-print(dice1, dice2, total)
+for days in range(7):
+    temp = random.randint(40, 110)
+    print('The temperature will be', temp, 'F')
