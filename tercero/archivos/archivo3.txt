@@ -2,6 +2,6 @@
 import random
 noun1 = ['The dog', 'The cat', 'The monkey', 'The hippo']
 noun2 = ['the room', 'the air', 'the light', 'the night']
-adjetive1 = ['happy', 'sad', 'timid', 'howling']
-adjective2 = ['dark', 'haunted', 'ghstly', 'cold']
+adjective1 = ['happy', 'sad', 'timid', 'howling']
+adjective2 = ['dark', 'haunted', 'cold']
 print(random.choice(noun1), 'is', random.choice(adjective1), random.choice(noun2), 'is', random.choice(adjective2))

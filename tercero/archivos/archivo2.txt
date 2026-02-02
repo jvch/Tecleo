@@ -1,6 +1,6 @@
 #Script que elige un adjetivo y un sustantivo al azar 4 veces
 import random
 noun = ['The dog', 'The cat', 'The monkey', 'The hippo']
-adjetive = ['happy', 'sad', 'timid', 'howling']
+adjective = ['happy', 'sad', 'timid', 'howling']
 for lines in range(4):
     print(random.choice(noun), 'is', random.choice(adjective))
