@@ -1,6 +1,7 @@
-#Script que elige un clima aleatorio para cada día de la semana
+#Script que elige dos sustantivos y dos adjetivos para formar una oración
 import random
-weather = ['rainy', 'sunny', 'windy', 'snowy']
-print('Over the next week:')
-for days in range(7):
-    print('The weather will be', random.choice(weather))
+noun1 = ['The dog', 'The cat', 'The monkey', 'The hippo']
+noun2 = ['the room', 'the air', 'the light', 'the night']
+adjetive1 = ['happy', 'sad', 'timid', 'howling']
+adjective2 = ['dark', 'haunted', 'ghstly', 'cold']
+print(random.choice(noun1), 'is', random.choice(adjective1), random.choice(noun2), 'is', random.choice(adjective2))

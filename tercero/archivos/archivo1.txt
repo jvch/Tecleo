@@ -1,5 +1,4 @@
-#7 temperaturas diferentes entre 40 y 110 grados
+#Adjetivo aleatorio para describir un perro
 import random
-for days in range(7):
-    temp = random.randint(40, 110)
-    print('The temperature will be', temp, 'F')
+adjective = ['happy', 'sad', 'timid']
+print('The dog is', random.choice(adjective))

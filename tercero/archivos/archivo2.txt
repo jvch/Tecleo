@@ -1,4 +1,6 @@
-#Script que elige uno de los 4 climas posibles
+#Script que elige un adjetivo y un sustantivo al azar 4 veces
 import random
-weather = ['rainy', 'sunny', 'windy', 'snowy']
-print('The weather will be', random.choice(weather))
+noun = ['The dog', 'The cat', 'The monkey', 'The hippo']
+adjetive = ['happy', 'sad', 'timid', 'howling']
+for lines in range(4):
+    print(random.choice(noun), 'is', random.choice(adjective))
