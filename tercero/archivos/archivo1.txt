@@ -1,4 +1,4 @@
-#Adjetivo aleatorio para describir un perro
+#Se elige un lugar aleatorio para una historia
 import random
-adjective = ['happy', 'sad', 'timid']
-print('The dog is', random.choice(adjective))
+setting = ['a wood','a land','a castle','a kingdom']
+print('She lived in',random.choice(setting),'far away.')

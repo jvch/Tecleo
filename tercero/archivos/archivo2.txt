@@ -1,6 +1,5 @@
-#Script que elige un adjetivo y un sustantivo al azar 4 veces
+#Se eligen personaje y adjetivo aleatorio para una historia
 import random
-noun = ['The dog', 'The cat', 'The monkey', 'The hippo']
-adjective = ['happy', 'sad', 'timid', 'howling']
-for lines in range(4):
-    print(random.choice(noun), 'is', random.choice(adjective))
+heroine = ['a woman','an explorer','a queen','a princess']
+adjective = ['old','young','kind','evil','beautiful']
+print('Once upon a time there was',random.choice(heroine),'who was very',random.choice(adjective),'.')
