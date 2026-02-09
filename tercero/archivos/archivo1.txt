@@ -1,4 +1,9 @@
-#Se elige un lugar aleatorio para una historia
+#Crea 20 puntos en coordenadas aleatorias
+import turtle
 import random
-setting = ['a wood','a land','a castle','a kingdom']
-print('She lived in',random.choice(setting),'far away.')
+t = turtle.Turtle()
+for lines in range(20):
+    x = random.randint(-100, 100)
+    y = random.randint(-100, 100)
+    t.goto(x, y)
+    t.dot(25)

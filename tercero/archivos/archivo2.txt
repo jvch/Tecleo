@@ -1,5 +1,13 @@
-#Se eligen personaje y adjetivo aleatorio para una historia
+#Crea un punto en una posición aleatoria
+#con un color aleatorio
 import random
-heroine = ['a woman','an explorer','a queen','a princess']
-adjective = ['old','young','kind','evil','beautiful']
-print('Once upon a time there was',random.choice(heroine),'who was very',random.choice(adjective),'.')
+import turtle
+t = turtle.Turtle()
+x = random.randint(-120, 120)
+y = random.randint(-120, 120)
+r = random.randint(0, 255) #red
+g = random.randint(0, 255) #green
+b = random.randint(0, 255) #blue
+t.goto(x, y)
+t.color(r, g, b)
+t.dot(25)
