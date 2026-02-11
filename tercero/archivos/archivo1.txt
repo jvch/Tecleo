@@ -1,9 +1,11 @@
-#Crea 20 puntos en coordenadas aleatorias
-import turtle
+#una estrella de un color aleatorio
 import random
+import turtle
 t = turtle.Turtle()
-for lines in range(20):
-    x = random.randint(-100, 100)
-    y = random.randint(-100, 100)
-    t.goto(x, y)
-    t.dot(25)
+r = random.randint(0, 255) #red
+g = random.randint(0, 255) #green
+b = random.randint(0, 255) #blue
+t.color(r, g, b)
+for sides in range(5):
+    t.forward(50)
+    t.right(144)

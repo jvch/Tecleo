@@ -1,13 +1,15 @@
-#Crea un punto en una posición aleatoria
-#con un color aleatorio
+#dibujo de 10 estrellas en lugares y con colores aleatorios
 import random
 import turtle
 t = turtle.Turtle()
-x = random.randint(-120, 120)
-y = random.randint(-120, 120)
-r = random.randint(0, 255) #red
-g = random.randint(0, 255) #green
-b = random.randint(0, 255) #blue
-t.goto(x, y)
-t.color(r, g, b)
-t.dot(25)
+for stars in range(10):
+    r = random.randint(0, 255) #red
+    g = random.randint(0, 255) #green
+    b = random.randint(0, 255) #blue
+    x = random.randint(-100, 100)
+    y = random.randint(-100, 100)
+    t.color(r, g, b)
+    t.goto(x, y)
+    for sides in range(5):
+        t.forward(50)
+        t.right(144)
