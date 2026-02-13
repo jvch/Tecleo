@@ -1,15 +1,9 @@
-#dibujo de 10 estrellas en lugares y con colores aleatorios
+#dibujo de un punto de un color aleatorio
 import random
 import turtle
 t = turtle.Turtle()
-for stars in range(10):
-    r = random.randint(0, 255) #red
-    g = random.randint(0, 255) #green
-    b = random.randint(0, 255) #blue
-    x = random.randint(-100, 100)
-    y = random.randint(-100, 100)
-    t.color(r, g, b)
-    t.goto(x, y)
-    for sides in range(5):
-        t.forward(50)
-        t.right(144)
+r = random.randint(0, 255)
+g = random.randint(0, 255)
+b = random.randint(0, 255)
+t.color(r, g, b)
+t.dot(25)
