@@ -1,13 +1,4 @@
-#punto en una posición y color aleatorios
-import turtle
-import random
-t = turtle.Turtle()
-r = random.randint(0, 255)	#red
-g = random.randint(0, 255)	#green
-b = random.randint(0, 255)	#blue
-x = random.randint(-120, 120)
-y = random.randint(-120, 120)
-t.color(r, g, b)
-t.penup()
-t.goto(x, y)
-t.dot(25)
+#función que calcula el área de un rectángulo
+def area(width, height):
+    print(width * height)
+area(8, 9)

@@ -1,10 +1,6 @@
-#Una historia con un arreglo de personajes, adjetivos y sustantivos
-import random
-heroine = ['a woman','an explorer','a queen','princess']
-adjective1 = ['old','young','kind','evil','beautiful']
-adjective2 = ['strange','magical','mystical','beautiful']
-noun1 = ['a wood','a land','a castle','a kingdom']
-noun2 = ['mountains','trees','rivers','hills']
-print('Once upon a time there was',random.choice(heroine),'who was very',random.choice(adjective1),'.')
-print('She lived in',random.choice(noun2),'far away.')
-print('It was',random.choice(adjective2),'with',random.choice(noun1),'as far as the eye could see.')
+#Función que dice 'Hello everyone!'
+#el número de veces que se indique
+def hi(howMany):
+    for n in range(howMany):
+        print('Hello everyone!')
+hi(10)
