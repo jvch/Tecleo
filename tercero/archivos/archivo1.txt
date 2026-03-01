@@ -1,4 +1,8 @@
-#función que calcula el área de un rectángulo
-def area(width, height):
-    print(width * height)
-area(8, 9)
+#función que dibuja un cuadrado
+import turtle
+t = turtle.Turtle()
+def square()
+    for s in range(4):
+        t.fd(100)
+        t.rt(90)
+square()

@@ -1,7 +1,11 @@
-#función que recibe una pregunta y una respuesta
-#si el usuario ingresa la respuesta correcta, se lo indica
-def ask(question, correctAnswer):
-    answer = input(question)
-    if answer == correctAnswer:
-        print('Correct')
-    ask('¿Cómo te llamas?', 'Juan')
+#función que dibuja un cuadrado
+#se puede especificar el tamaño del lado como un parámetro
+#la función se llama 3 veces con diferentes valores
+import turtle
+def square(side):
+    for s in range(4):
+        t.fd(side)
+        t.rt(90)
+square(10)
+square(20)
+square(30)
