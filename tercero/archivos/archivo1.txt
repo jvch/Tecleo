@@ -1,7 +1,7 @@
 #función que dibuja un cuadrado
 import turtle
 t = turtle.Turtle()
-def square()
+def square():
     for s in range(4):
         t.fd(100)
         t.rt(90)
