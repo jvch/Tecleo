@@ -1,11 +1,17 @@
-#función que dibuja un cuadrado
-#se puede especificar el tamaño del lado como un parámetro
-#la función se llama 3 veces con diferentes valores
 import turtle
-def square(side):
-    for s in range(4):
-        t.fd(side)
-        t.rt(90)
-square(10)
-square(20)
-square(30)
+import random
+t = turtle.Turtle()
+#creación de una función para dibujar un árbol
+def tree(x, y):
+    t.penup()
+    t.goto(x, y)
+    t.color('brown')
+    t.width(20)
+    t.setheading(90)
+    t.pendown()
+    t.forward(50)
+    t.color('green')
+    t.dot(50)
+#ciclo que crea 20 árboles en posiciones aleatorias
+for n in range(20):
+    tree(random.randint(-190, 190), random.randint(-190, 190))

@@ -1,8 +1,13 @@
-#función que dibuja un cuadrado
+import random
 import turtle
 t = turtle.Turtle()
-def square():
-    for s in range(4):
-        t.fd(100)
-        t.rt(90)
-square()
+#función que dibuja un árbol
+def tree():
+    t.color('brown')
+    t.setheading(90)
+    t.width(20)
+    t.forward(50)
+    t.color('green')
+    t.dot(50)
+#llamada a la función 'tree'
+tree()
