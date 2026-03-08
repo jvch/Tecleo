@@ -1,17 +1,20 @@
 import turtle
 import random
 t = turtle.Turtle()
-#creación de una función para dibujar un árbol
-def tree(x, y):
-    t.penup()
-    t.goto(x, y)
+#creación de una función para dibujar un oso
+def head(size):
     t.color('brown')
-    t.width(20)
-    t.setheading(90)
+    t.penup()
+    t.goto(random.randint(-190, 190), random.randint(-190, 190))
     t.pendown()
-    t.forward(50)
-    t.color('green')
-    t.dot(50)
-#ciclo que crea 20 árboles en posiciones aleatorias
+    t.dot(size)
+    t.setheading(45)
+    t.forward(size/2)
+    t.dot(size/2)
+    t.back(size/2)
+    t.left(90)
+    t.forward(size/2)
+    t.dot(size/2)
+#ciclo que crea 8 osos en posiciones aleatorias
 for n in range(20):
-    tree(random.randint(-190, 190), random.randint(-190, 190))
+    head(random.randint(30, 100))

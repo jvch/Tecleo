@@ -1,13 +1,18 @@
 import random
 import turtle
 t = turtle.Turtle()
-#función que dibuja un árbol
-def tree():
+#función que dibuja un oso
+#con 'size' se especifica el tamaño de la cabeza
+#y de las orejas
+def head(size):
     t.color('brown')
-    t.setheading(90)
-    t.width(20)
-    t.forward(50)
-    t.color('green')
-    t.dot(50)
-#llamada a la función 'tree'
-tree()
+    t.dot(size)
+    t.setheading(45)
+    t.forward(size/2)
+    t.dot(size/2)
+    t.back(size/2)
+    t.setheading(135)
+    t.forward(size/2)
+    t.dot(size/2)
+#llamada a la función 'head'
+head(100)
