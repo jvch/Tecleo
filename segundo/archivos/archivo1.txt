@@ -1,1 +1,4 @@
-segybdi
+//programa que cambia de pantalla con un clic
+onEvent("boton1", "click", function() {
+    setScreen("pantalla1");
+});

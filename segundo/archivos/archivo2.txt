@@ -1,1 +1,13 @@
-segydbid
+//programa que cambia de pantalla de acuerdo al valor que se elija
+if (value == "Fish") {
+    setScreen("fishScreen");
+}
+if (value == "Iguana") {
+    setScreen("iguanaScreen");
+}
+if (value == "Parakeet") {
+    setScreen("parakeetScreen");
+}
+if (value == "Dog") {
+    setScreen("dogScreen");
+}
