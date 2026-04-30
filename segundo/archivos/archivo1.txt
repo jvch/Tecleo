@@ -1,4 +1,4 @@
-//programa que cambia una imágen de lugar cada 1000 ms
+//programa que cambia una imagen de lugar cada 1000 ms
 timedLoop(2000, function() {
     setPosition("unaImagen", randomNumber(0, 320), randomNumber(0, 450), 50, 50);
 });
