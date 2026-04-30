@@ -1,4 +1,4 @@
-//programa que cambia de pantalla con un clic
-onEvent("boton1", "click", function() {
-    setScreen("pantalla1");
+//programa que cambia una imágen de lugar cada 1000 ms
+timedLoop(2000, function() {
+    setPosition("unaImagen", randomNumber(0, 320), randomNumber(0, 450), 50, 50);
 });
