@@ -1,11 +1,14 @@
-//programa que muestra y oculta imágenes de acuerdo a la opción elegida
-onEvent("dropdown", "change", function() {
-    var escena = getProperty("dropdown", "value");
-    if (escena == "Playa") {
-        showElement("playaImg");
-        hideElement("nieveImg");
-    } else {
-        showElement("nieveImg");
-        hideElement("playaImg");
-    }
+//llamada a la función anterior cuando se haga clic
+//en cualquier imagen de la última pantalla
+onEvent("q3_img1", "click", function() {
+    opcion1 = opcion1 + 1;
+    resultado();
+});
+onEvent("q3_img2", "click", function() {
+    opcion2 = opcion2 + 1;
+    resultado();
+});
+onEvent("q3_img3", "click", function() {
+    opcion3 = opcion3 + 1;
+    resultado();
 });
