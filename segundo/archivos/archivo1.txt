@@ -1,13 +1,18 @@
-//función que elige una pantalla de acuerdo a cuál tenga más puntos
-function resultado() {
-    var opcionFinal = Math.max(opcion1, opcion2, opcion3, opcion4);
-    if (opcionFinal == opcion1) {
-        setScreen("choice1");
-    }
-    if (opcionFinal == opcion2) {
-        setScreen("choice2");
-    }
-    if (opcionFinal == opcion3) {
-        setScreen("choice3");
-    }
+// Operadores lógicos
+let a = true;
+let b = false;
+
+// AND
+if (a && b) {
+    console.log("Ambos son verdaderos");
+}
+
+// OR
+if (a || b) {
+    console.log("Al menos uno es verdadero");
+}
+
+// NOT
+if (!b) {
+    console.log("b es falso");
 }
