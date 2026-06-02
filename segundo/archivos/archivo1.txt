@@ -1,18 +1,17 @@
-// Operadores lógicos
-let a = true;
-let b = false;
+//variables a y b con su valor
+let a = 10;
+let b = 3;
 
-// AND
-if (a && b) {
-    console.log("Ambos son verdaderos");
-}
+//operaciones aritméticas realizadas sobre a y b
+console.log("Suma:", a + b);
+console.log("Resta:", a - b);
+console.log("Multiplicación:", a * b);
+console.log("División:", a / b);
+console.log("Módulo (residuo):", a % b);
+console.log("Potencia:", a ** b);
 
-// OR
-if (a || b) {
-    console.log("Al menos uno es verdadero");
-}
+a++;
+console.log("Incremento:", a);
 
-// NOT
-if (!b) {
-    console.log("b es falso");
-}
+b--;
+console.log("Decremento:", b);
