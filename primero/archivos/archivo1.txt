@@ -1,17 +1,12 @@
-//variables a y b con su valor
-let a = 10;
-let b = 3;
+//programa en el que se usan los condicionales
+//"if", "else if" y "else"
 
-//operaciones aritméticas realizadas sobre a y b
-console.log("Suma:", a + b);
-console.log("Resta:", a - b);
-console.log("Multiplicación:", a * b);
-console.log("División:", a / b);
-console.log("Módulo (residuo):", a % b);
-console.log("Potencia:", a ** b);
+let numero = parseInt(prompt("Ingresa un número:"));
 
-a++;
-console.log("Incremento:", a);
-
-b--;
-console.log("Decremento:", b);
+if (numero > 0) {
+    console.log("El número es positivo.");
+} else if (numero < 0) {
+    console.log("El número es negativo.");
+} else {
+    console.log("El número es cero.");
+}
