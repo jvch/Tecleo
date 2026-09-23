@@ -1,12 +1,12 @@
-//programa en el que se usan los condicionales
-//"if", "else if" y "else"
-
-let numero = parseInt(prompt("Ingresa un número:"));
-
-if (numero > 0) {
-    console.log("El número es positivo.");
-} else if (numero < 0) {
-    console.log("El número es negativo.");
-} else {
-    console.log("El número es cero.");
-}
+barra vertical o pipe |
+grado °
+signos de admiración ¡ !
+comillas "
+hashtag o gato #
+porcentaje %
+ampersand &
+diagonal o slash /
+paréntesis ( )
+igual =
+signos de pregunta ¿ ?
+apóstrofe '
