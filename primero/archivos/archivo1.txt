@@ -1,12 +1,11 @@
-barra vertical o pipe |
-grado °
-signos de admiración ¡ !
-comillas "
-hashtag o gato #
-porcentaje %
-ampersand &
-diagonal o slash /
-paréntesis ( )
-igual =
-signos de pregunta ¿ ?
-apóstrofe '
+diéresis ¨
+suma +
+asterisco *
+llaves { }
+corchetes [ ]
+coma ,
+punto y coma ;
+punto .
+dos puntos :
+guión -
+guión bajo _
