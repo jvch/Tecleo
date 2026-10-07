@@ -1,11 +1,9 @@
+arroba @
+guion curvo ~
+acento invertido `
+negación ¬
+acento circunflejo ^
 diéresis ¨
-suma +
-asterisco *
-llaves { }
-corchetes [ ]
-coma ,
-punto y coma ;
-punto .
-dos puntos :
-guión -
 guión bajo _
+punto y coma ;
+asterisco *
